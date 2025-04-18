@@ -1,0 +1,87 @@
+/* LoginSignup.css */
+
+.login-page {
+  background: #f6f5f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.form-container {
+  background: #fff;
+  padding: 40px;
+  width: 400px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+              0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 10px;
+  z-index: 2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form h1 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+button {
+  border-radius: 20px;
+  border: none;
+  background-color: #6200ea;
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:disabled {
+  background-color: #9c47ff;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #4500b5;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+
+.overlay-container {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: linear-gradient(to right, #6200ea, #9c47ff);
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.overlay-panel h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}

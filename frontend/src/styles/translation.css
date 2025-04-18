@@ -1,0 +1,29 @@
+/* src/styles/translation.css */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+}
+
+.language-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lang-btn {
+  background-color: #00d9ff;
+  color: white;
+  padding: 10px;
+}
+
+.lang-btn.active {
+  background-color: #0056b3; /* Highlight active language */
+}
+
+/* Add other styles as needed */

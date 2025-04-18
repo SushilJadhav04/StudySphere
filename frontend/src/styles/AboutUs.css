@@ -1,0 +1,77 @@
+/* AboutUs.css */
+
+.about-us-container {
+  max-width: 800px; /* Limit the width for better readability */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add padding for spacing */
+  font-family: 'Poppins', sans-serif; /* Use modern font */
+  line-height: 1.6; /* Improve readability */
+  background-color: #0d0d0d; /* Deep black background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 15px rgba(0, 200, 255, 0.2); /* Electric blue glow effect */
+  color: #e0e0e0; /* Light gray text for contrast */
+}
+
+h1 {
+  font-size: 2.5em; /* Larger font size for main heading */
+  color: #00c8ff; /* Electric blue heading */
+  text-align: center; /* Center the heading */
+}
+
+h2 {
+  font-size: 1.8em; /* Slightly smaller than h1 */
+  color: #00a0e0; /* Slightly darker electric blue */
+  margin-top: 20px; /* Space above subheadings */
+}
+
+p {
+  margin-bottom: 15px; /* Space below paragraphs */
+  color: #b0b0b0; /* Lighter gray for paragraph text */
+}
+
+ul {
+  list-style-type: disc; /* Bullet points for lists */
+  margin-left: 20px; /* Indent list items */
+}
+
+li {
+  margin-bottom: 10px; /* Space between list items */
+  color: #d0d0d0; /* Soft gray */
+}
+
+strong {
+  color: #00c8ff; /* Highlight important terms with electric blue */
+}
+
+/* Electric Blue Button */
+.button {
+  background-color: #00c8ff; /* Electric blue background */
+  color: #0d0d0d; /* Dark text for contrast */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #009ccd; /* Slightly darker blue on hover */
+  box-shadow: 0 0 10px #00c8ff; /* Electric blue glow */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .about-us-container {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+
+  h1 {
+    font-size: 2em; /* Adjust heading size on smaller screens */
+  }
+
+  h2 {
+    font-size: 1.5em; /* Adjust subheading size on smaller screens */
+  }
+}

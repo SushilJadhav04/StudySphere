@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply base background using Tailwind classes instead */
+body {
+  @apply bg-white dark:bg-black text-black dark:text-white;
+}

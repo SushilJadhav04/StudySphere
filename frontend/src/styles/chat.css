@@ -1,0 +1,107 @@
+
+/* Hide scrollbar but keep scrolling functionality */
+.custom-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+
+
+
+/* File Upload Section */
+label[for="pdf-upload"] {
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 600;/* Electric blue text */
+  transition: color 0.3s ease-in-out;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .chat-container .flex-col {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Chat Box Styles */
+.chat-box {
+  background-color: #111; /* Darker background for chat */
+  border: 2px solid rgba(0, 200, 255, 0.5); /* Subtle electric blue border */
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+/* Chat Header */
+.chat-header { /* Electric blue border */
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600; /* Electric blue text */
+}
+
+/* Input and Button Styles */
+input[type='text'] {
+  background-color: #111;
+  color: #e0e0e0;
+  padding: 10px;
+  font-size: 1rem;
+  transition: border 0.3s ease-in-out;
+}
+
+input[type='text']:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 200, 255, 0.5);
+}
+
+input[type='file'] {
+  display: none; /* Hide file input */
+}
+
+/* Button Styles */
+button {/* Electric blue */
+  color: #0d0d0d; /* Dark text for contrast */
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+/* Message Styles */
+.flex-end .message-bubble {
+  background-color: gray; /* Electric blue messages */
+  color: #0d0d0d; /* Black text for contrast */
+  border-radius: 10px;
+  padding: 10px 15px;
+  max-width: 80%;
+  text-align: left;
+  margin: 5px 0;
+}
+
+.flex-start .message-bubble {
+  background-color: #333; /* Dark gray for received messages */
+  color: #e0e0e0;
+  border-radius: 10px;
+  padding: 10px 15px;
+  max-width: 80%;
+  text-align: left;
+  margin: 5px 0;
+}
+
+/* Timestamp Styles */
+.message-timestamp {
+  font-size: 0.8rem;
+  color: #888;
+  text-align: right;
+  margin-top: 4px;
+}

@@ -1,0 +1,23 @@
+/* App.css – Light/Dark mode with Tailwind classes */
+html,
+body {
+  @apply m-0 p-0 w-full h-full transition-colors duration-300;
+}
+
+/* Logo effects */
+.logo {
+  @apply h-24 p-6 transition filter will-change-auto;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #007bff);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Custom Utility */
+@layer utilities {
+  .btn-fixed-size {
+    @apply min-w-[150px] min-h-[50px];
+  }
+}

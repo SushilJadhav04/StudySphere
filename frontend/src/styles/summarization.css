@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+textarea {
+  width: calc(100% - 20px);
+  height: 120px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* Error Message Styling */
+.text-red-500 {
+  color: red;
+}
+
+/* Loading Spinner */
+.animate-spin {
+  animation: spin infinite linear;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
