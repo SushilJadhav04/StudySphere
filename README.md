@@ -19,13 +19,12 @@ git clone https://github.com/your-username/studysphere-backend.git
 
 for backendd
 
-> > cd studysphere-backend
-> >
-> > > pip install -r requirements.txt
-> > > python app.py
+cd studysphere-backend
+pip install -r requirements.txt
+python app.py
 
 for frontend
 
-> > > cd frontend
-> > > npm install
-> > > npm run dev
+cd frontend
+npm install
+npm run dev
