@@ -8,26 +8,7 @@ const Footer = () => {
           <p className="text-center text-sm text-gray-800 dark:text-gray-200">
             &copy; {new Date().getFullYear()} Study Sphere. All rights reserved.
           </p>
-          <div className="flex flex-wrap justify-center space-x-8">
-            <a
-              href="/privacypolicy"
-              className="text-sm text-gray-800 dark:text-gray-200 hover:text-white transition-colors"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="/termsofservice"
-              className="text-sm text-gray-800 dark:text-gray-200 hover:text-white transition-colors"
-            >
-              Terms of Service
-            </a>
-            <a
-              href="/contactus"
-              className="text-sm text-gray-800 dark:text-gray-200 hover:text-white transition-colors"
-            >
-              Contact
-            </a>
-          </div>
+          
         </div>
       </div>
     </footer>
