@@ -27,7 +27,8 @@
     "react-toastify": "^11.0.5",
     "styled-components": "^6.1.16",
     "three": "^0.174.0",
-    "lucide-react": "^0.315.0"
+    "lucide-react": "^0.315.0",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@types/react": "^18.2.55",
