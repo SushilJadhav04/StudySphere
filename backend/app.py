@@ -59,7 +59,7 @@ app.register_blueprint(contact_bp)
 # ✅ Serve main index
 @app.route("/")
 def index():
-    return render_template("index.html")  
+    return jsonify({"message": "StudySphere backend is live!"})
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
