@@ -104,7 +104,7 @@ const FeatureNavbar = () => {
             )}
           </>
         ) : (
-          <Link to="http://localhost:5000/auth/google-login">
+          <Link to="https://studysphere-kmzy.onrender.com/auth/google-login">
             <Button variant="adaptive" className="text-lg px-10 py-3">
               Login
             </Button>

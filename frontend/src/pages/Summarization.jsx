@@ -21,7 +21,7 @@ const Summarization = () => {
     setError("");
 
     try {
-      const response = await fetch("http://192.168.74.110:5000/summarization/process-text", {
+      const response = await fetch("https://studysphere-kmzy.onrender.com/summarization/process-text", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

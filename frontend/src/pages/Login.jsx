@@ -7,7 +7,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleOAuthLogin = async (provider) => {
-    const url = `http://192.168.89.110:5000/auth/${provider}`;
+    const url = `https://studysphere-kmzy.onrender.com/auth/${provider}`;
     
     try {
       // Redirect to the OAuth provider (Google/Facebook/GitHub)

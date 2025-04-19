@@ -14,7 +14,7 @@ const Home = () => {
 
   // 🔐 Google Login Handler
   const handleGoogleLogin = () => {
-    window.location.href = "http://localhost:5000/auth/google-login"; // Or your deployed backend URL
+    window.location.href = "https://studysphere-kmzy.onrender.com/auth/google-login"; // Or your deployed backend URL
   };
 
   return (
