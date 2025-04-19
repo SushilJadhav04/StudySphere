@@ -39,7 +39,7 @@ const Translation = () => {
 
     setIsLoading(true);
     try {
-      const response = await axios.post("https://studysphere-kmzy.onrender.com/translation/translate", {
+      const response = await axios.post("https://studysphere-dijr.onrender.com/translation/translate", {
         text,
         source_lang: sourceLang,
         target_lang: targetLang,
