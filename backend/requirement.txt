@@ -25,3 +25,6 @@ torch
 transformers
 youtube-transcript-api
 gunicorn
+google.generativeai
+pydub
+speech_recognition
