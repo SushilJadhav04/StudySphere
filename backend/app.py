@@ -5,7 +5,7 @@ from flask_session import Session
 from flask_jwt_extended import JWTManager
 import traceback
 from datetime import timedelta
-import gunicorn
+import os
 
 from blueprints.chatbot.routes import chatbot_bp
 from blueprints.book_repo.routes import book_repo_bp
