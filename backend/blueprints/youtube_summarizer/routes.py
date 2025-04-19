@@ -30,6 +30,7 @@ def extract_video_id(url):
     return match.group(1) if match else None
 
 
+
 def fetch_transcript(video_id):
     try:
         transcript = YouTubeTranscriptApi.get_transcript(video_id, languages=['en'])
