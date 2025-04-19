@@ -24,22 +24,19 @@ const Home = () => {
         <div className="relative z-10 text-center">
           {/* Main Heading */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center">
-          <span className="inline-flex flex-col sm:flex-row justify-center items-center sm:items-baseline text-balance mt-[4rem] sm:mt-1">
+            <span className="inline-flex flex-wrap justify-center items-center sm:items-center text-balance mt-[4rem] sm:mt-1">
               Your path to&nbsp;
-              <div className="min-h-[3rem] sm:min-h-[4rem] md:min-h-[5rem] flex items-center justify-center">
-                <FlipWords
-                  words={[
-                    "Growth",
-                    "Success",
-                    "Creation",
-                    "Knowledge",
-                    "Discovery",
-                    "Innovation",
-                    "Transformation",
-                  ]}
-                  className="text-center"
-                />
-              </div>
+              <FlipWords
+                words={[
+                  "Growth",
+                  "Success",
+                  "Creation",
+                  "Knowledge",
+                  "Discovery",
+                  "Innovation",
+                  "Transformation",
+                ]}
+              />
             </span>
           </h1>
 
