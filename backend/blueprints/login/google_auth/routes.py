@@ -97,7 +97,7 @@ def callback():
     token = jwt.encode(payload, JWT_SECRET, algorithm="HS256")
 
     # Redirect to frontend with token
-    frontend_url = f"http://192.168.74.110:5173/?token={token}"
+    frontend_url = f"http://192.168.74.110:5173/","https://study-sphere-sepia-eta.vercel.app/?token={token}"
     return redirect(frontend_url)
     
 
