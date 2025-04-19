@@ -6,6 +6,7 @@ Flask
 Flask-Cors
 Flask-Mail
 Flask-Session
+flask_jwt_extended
 google-auth
 google-auth-oauthlib
 google-generativeai
