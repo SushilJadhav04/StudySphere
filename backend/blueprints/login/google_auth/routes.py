@@ -19,7 +19,6 @@ GOOGLE_CLIENT_SECRET = os.getenv("GOOGLE_CLIENT_SECRET")
 GOOGLE_DISCOVERY_URL = "https://accounts.google.com/.well-known/openid-configuration"
 REDIRECT_URI = "https://studysphere-dijr.onrender.com/auth/callback"
 
-
 JWT_SECRET = os.getenv("JWT_SECRET_KEY")
 
 def get_google_provider_cfg():
