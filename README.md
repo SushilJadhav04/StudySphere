@@ -26,5 +26,5 @@ python app.py
 for frontend
 
 cd frontend
-npm install
+npm install --legacy-peer-deps
 npm run dev
