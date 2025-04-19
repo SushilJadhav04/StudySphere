@@ -2,6 +2,7 @@ from flask import Flask, render_template , request, jsonify ,session
 from flask_cors import CORS
 from config import Config , config
 from flask_session import Session 
+from flask_jwt_extended import JWTManager
 import traceback
 from datetime import timedelta
 
