@@ -17,6 +17,8 @@ load_dotenv()
 # Configure using environment variable
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))  # Modified
 model = genai.GenerativeModel("gemini-1.5-flash")
+
+
 # Flask Blueprint
 youtube_bp = Blueprint('youtube', __name__)
 CORS(youtube_bp)
