@@ -8,6 +8,9 @@ const Footer = () => {
           <p className="text-center text-sm text-gray-800 dark:text-gray-200">
             &copy; {new Date().getFullYear()} Study Sphere. All rights reserved.
           </p>
+          <p className="text-center text-sm text-gray-800 dark:text-gray-200">
+          Powered by Google's Gemini
+          </p>
           
         </div>
       </div>
