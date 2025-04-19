@@ -14,12 +14,9 @@ import speech_recognition as sr
 
 # Load environment variables
 load_dotenv()
-GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
-
-# Initialize Gemini
-genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash')
-
+# Configure using environment variable
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))  # Modified
+model = genai.GenerativeModel("gemini-1.5-flash")
 # Flask Blueprint
 youtube_bp = Blueprint('youtube', __name__)
 CORS(youtube_bp)
