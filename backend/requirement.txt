@@ -27,4 +27,6 @@ youtube-transcript-api
 gunicorn
 google.generativeai
 pydub
-speech_recognition
+speechrecognition==3.8.1
+pyaudio==0.2.11
+--upgrade pip
