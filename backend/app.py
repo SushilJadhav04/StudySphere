@@ -27,7 +27,7 @@ Session(app)
 # ✅ Set up CORS with proper configuration
 CORS(app, 
     supports_credentials=True, 
-    origins=["*","http://localhost:5173", "http://192.168.76.110:5173","https://study-sphere-sepia-eta.vercel.app", "*"],  # Allow both PC & Mobile
+    origins=["*","https://study-sphere-sepia-eta.vercel.app", "http://localhost:5173"],  # Allow both PC & Mobile
     allow_headers=["Content-Type", "Authorization"],
     resources={r"/*": {"origins": "*"}}
 )
