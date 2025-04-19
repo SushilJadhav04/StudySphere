@@ -17,7 +17,7 @@ os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID") 
 GOOGLE_CLIENT_SECRET = os.getenv("GOOGLE_CLIENT_SECRET")
 GOOGLE_DISCOVERY_URL = "https://accounts.google.com/.well-known/openid-configuration"
-REDIRECT_URI = "http://localhost:5000/auth/callback"
+REDIRECT_URI = "https://studysphere-dijr.onrender.com/auth/callback"
 
 JWT_SECRET = os.getenv("JWT_SECRET_KEY")
 
@@ -97,7 +97,7 @@ def callback():
     token = jwt.encode(payload, JWT_SECRET, algorithm="HS256")
 
     # Redirect to frontend with token
-    frontend_url = f"http://192.168.74.110:5173/","https://study-sphere-sepia-eta.vercel.app/?token={token}"
+    frontend_url = f"https://study-sphere-sepia-eta.vercel.app/?token={token}"
     return redirect(frontend_url)
     
 
