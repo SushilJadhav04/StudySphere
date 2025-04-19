@@ -35,7 +35,6 @@ const Sidebar = () => {
     { name: "Book Repository", icon: faBook, path: "/books" },
     { name: "Translation", icon: faLanguage, path: "/Translation" },
     { name: "StudySparks", icon: faStar, path: "/StudySparks" },
-    { name: "YouTube Summary", icon: faVideo, path: "/youtube" },
     { name: "ChatBot", icon: faRobot, path: "/Chat" },
     { name: "Contact Us", icon: faMessage, path: "/ContactUs" },
 
