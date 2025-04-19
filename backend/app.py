@@ -5,6 +5,7 @@ from flask_session import Session
 from flask_jwt_extended import JWTManager
 import traceback
 from datetime import timedelta
+import gunicorn
 
 from blueprints.chatbot.routes import chatbot_bp
 from blueprints.book_repo.routes import book_repo_bp
@@ -62,5 +63,5 @@ def index():
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=port, debug=False)
 
