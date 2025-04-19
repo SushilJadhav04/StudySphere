@@ -31,7 +31,7 @@ const Chat = () => {
     setInput("");
 
     try {
-      const res = await fetch("https://studysphere-kmzy.onrender.com/chatbot/ask_gemini", {
+      const res = await fetch("https://studysphere-dijr.onrender.com/chatbot/ask_gemini", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: finalQuery }),
@@ -60,7 +60,7 @@ const Chat = () => {
 
     try {
       setUploadStatus("Uploading...");
-      const res = await fetch("https://studysphere-kmzy.onrender.com/chatbot/upload_pdf", {
+      const res = await fetch("https://studysphere-dijr.onrender.com/chatbot/upload_pdf", {
         method: "POST",
         body: formData,
       });

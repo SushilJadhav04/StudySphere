@@ -21,7 +21,7 @@ export const AuthProvider = ({ children }) => {
 
     if (token) {
       axios
-        .post("https://studysphere-kmzy.onrender.com/auth/verify-token", { token })
+        .post("https://studysphere-dijr.onrender.com/auth/verify-token", { token })
         .then((res) => {
           if (res.data.valid) {
             setUser({

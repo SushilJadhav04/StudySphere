@@ -3,7 +3,7 @@ import Sidebar from "../components/layout/Sidebar";
 import Button from "../components/common/Button";
 import "../styles/book-repository.css"; // Keep if you’re using any custom styles
 
-const API_URL = "https://studysphere-kmzy.onrender.com/book_repo/search?query=";
+const API_URL = "https://studysphere-dijr.onrender.com/book_repo/search?query=";
 
 const BookRepository = () => {
   const [books, setBooks] = useState([]);

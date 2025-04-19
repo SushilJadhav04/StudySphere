@@ -20,7 +20,7 @@ const StudySparks = () => {
     setError("");
 
     try {
-      const response = await fetch("https://studysphere-kmzy.onrender.com/studysparks/process-text", {
+      const response = await fetch("https://studysphere-dijr.onrender.com/studysparks/process-text", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
