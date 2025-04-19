@@ -14,7 +14,7 @@ const Home = () => {
 
   // 🔐 Google Login Handler
   const handleGoogleLogin = () => {
-    window.location.href = "https://studysphere-dijr.onrender.com/auth/google-login"; // Or your deployed backend URL
+    window.location.href = "https://studysphere-dijr.onrender.com/auth/callback"; // Or your deployed backend URL
   };
 
   return (
