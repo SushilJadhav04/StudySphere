@@ -30,7 +30,7 @@ const YouTubeSummarizer = () => {
     setSummary("");
 
     try {
-      const response = await fetch("https://studysphere-dijr.onrender.com/youtube/summarize_youtube", {
+      const response = await fetch("https://studysphere-dijr.onrender.com/youtube/summarize_youtube"  , {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url: youtubeURL }),
