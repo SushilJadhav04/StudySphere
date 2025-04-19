@@ -10,19 +10,19 @@ const Footer = () => {
           </p>
           <div className="flex flex-wrap justify-center space-x-8">
             <a
-              href="https://study-sphere-sepia-eta.vercel.app//PrivacyPolicy"
+              href="/PrivacyPolicy"
               className="text-sm text-gray-800 dark:text-gray-200 hover:text-white transition-colors"
             >
               Privacy Policy
             </a>
             <a
-              href="https://study-sphere-sepia-eta.vercel.app//TermsOfService"
+              href="/TermsOfService"
               className="text-sm text-gray-800 dark:text-gray-200 hover:text-white transition-colors"
             >
               Terms of Service
             </a>
             <a
-              href="https://study-sphere-sepia-eta.vercel.app//ContactUs"
+              path="/ContactUs"
               className="text-sm text-gray-800 dark:text-gray-200 hover:text-white transition-colors"
             >
               Contact
