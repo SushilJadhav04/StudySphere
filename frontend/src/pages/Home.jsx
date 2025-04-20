@@ -24,7 +24,7 @@ const Home = () => {
         <div className="relative z-10 text-center">
           {/* Main Heading */}
           <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-center">
-            <span className="inline-flex flex-wrap justify-center items-center sm:items-center text-balance mt-4rem sm:mt-1">
+            <span className="inline-flex flex-wrap justify-center items-center gap-2">
               Your path to&nbsp;
               <FlipWords
                 words={[
