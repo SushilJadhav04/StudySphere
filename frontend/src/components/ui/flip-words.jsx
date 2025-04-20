@@ -25,6 +25,7 @@ export const FlipWords = ({ words, interval = 2000 }) => {
         minWidth: "10ch", // Prevent layout shift
         lineHeight:"1", 
         height:"1em",
+        top:"-2em",
       }}
     >
       <span
