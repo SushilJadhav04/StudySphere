@@ -28,8 +28,3 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .hero-heading {
-    font-size: 3rem; /* lg:text-5xl */
-  }
-}
