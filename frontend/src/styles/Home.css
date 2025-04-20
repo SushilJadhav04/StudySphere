@@ -7,19 +7,25 @@
   font-weight: bold;
   line-height: 1.25;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow: visible;
+  padding: 01rem;
   font-size: 1.875rem; /* text-3xl */
 }
 
 @media (min-width: 640px) {
   .hero-heading {
-    font-size: 2.25rem; /* sm:text-4xl */
+    font-size: 2rem; /* sm:text-4xl */
   }
 }
 
 @media (min-width: 768px) {
   .hero-heading {
     font-size: 3rem; /* md:text-5xl */
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-heading {
+    font-size: 3rem; /* lg:text-5xl */
   }
 }
