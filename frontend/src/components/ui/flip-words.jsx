@@ -17,12 +17,24 @@ export const FlipWords = ({ words, interval = 2000 }) => {
   }, [words, interval]);
 
   return (
-    <span className="relative inline-block min-w-[10ch] h-[2.5rem] sm:h-[3rem] md:h-[3.5rem]">
+    <span
+      className="relative inline-block"
+      style={{
+        display: "inline-block",
+        verticalAlign: "baseline", // Align with surrounding text
+        minWidth: "10ch", // Prevent layout shift
+        height: "1em", // Match text line height
+      }}
+    >
       <span
-        className={`absolute inset-0 transition-all duration-500 ease-in-out transform text-blue-500 font-poppins font-bold
-          ${isFlipping ? "opacity-0 -translate-y-2" : "opacity-100 translate-y-0"}
-        `}
-        style={{ whiteSpace: "nowrap" }}
+        className={`absolute inset-0 transition-all duration-500 ease-in-out transform text-blue-500 font-bold`}
+        style={{
+          whiteSpace: "nowrap",
+          display: "inline-block",
+          transform: isFlipping ? "translateX(-100%)" : "translateX(0)",
+          opacity: isFlipping ? 0 : 1,
+          transition: "transform 0.5s ease-in-out, opacity 0.5s ease-in-out",
+        }}
       >
         {words[currentWordIndex]}
       </span>
