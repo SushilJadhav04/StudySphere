@@ -38,7 +38,7 @@ const Home = () => {
                 ]}
               />
             </span>
-          
+          </h1>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2">
             starts here!
