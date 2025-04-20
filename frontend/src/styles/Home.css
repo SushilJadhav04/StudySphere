@@ -15,6 +15,10 @@
 @media (min-width: 640px) {
   .hero-heading {
     font-size: 3rem; /* sm:text-4xl */
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  
   }
 }
 
