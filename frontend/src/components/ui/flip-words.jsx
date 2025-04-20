@@ -18,7 +18,7 @@ export const FlipWords = ({ words, interval = 2000 }) => {
 
   return (
     <span
-      className="relative inline-block"
+      className="relative inline-block text-blue-500 font-poppins"
       style={{
         display: "inline-block",
         verticalAlign: "baseline", // Align with surrounding text
