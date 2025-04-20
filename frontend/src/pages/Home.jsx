@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { FaArrowRight } from "react-icons/fa";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { AuthContext } from "../components/context/AuthContext";
 import { FlipWords } from "../components/ui/flip-words";
 import Footer from "../components/layout/Footer";
@@ -41,7 +42,7 @@ const Home = () => {
           </h1>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2">
-            starts here!
+            Starts Here!
           </h2>
 
           {/* Buttons */}
@@ -57,7 +58,8 @@ const Home = () => {
 
             <Link to="/Summarization" className="w-full sm:w-auto">
               <Button className="w-full sm:w-auto flex justify-center items-center gap-2 text-center">
-                Let's Go <FaArrowRight className="text-lg" />
+              Let's Go <FontAwesomeIcon icon={faChevronRight} className="text-2xl ml-2 font-bold" />
+
               </Button>
             </Link>
           </div>
