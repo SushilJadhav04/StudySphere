@@ -27,13 +27,13 @@ export const FlipWords = ({ words, interval = 2000 }) => {
       }}
     >
       <span
-        className={`absolute inset-0 transition-all duration-500 ease-in-out transform text-blue-500 font-bold`}
+        className={`absolute inset-0 transition-all duration-1000 ease-in-out transform ${
+          isFlipping ? "opacity-0 translate-z-3" : "opacity-100 translate-y-0"
+        }`}
         style={{
-          whiteSpace: "nowrap",
           display: "inline-block",
-          transform: isFlipping ? "translateX(-100%)" : "translateX(0)",
-          opacity: isFlipping ? 0 : 1,
-          transition: "transform 0.5s ease-in-out, opacity 0.5s ease-in-out",
+          whiteSpace: "nowrap",
+          textAlign: "left",
         }}
       >
         {words[currentWordIndex]}
