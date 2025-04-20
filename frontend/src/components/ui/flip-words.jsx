@@ -22,7 +22,8 @@ export const FlipWords = ({ words, interval = 2000 }) => {
       style={{
         display: "inline-flex",
         alignItems: "center",
-        minWidth: "12ch", // Ensures enough space for words
+        minWidth: "12ch", 
+        textAlign: "Centre",// Ensures enough space for words
       }}
     >
       <span
