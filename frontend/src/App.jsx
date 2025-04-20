@@ -45,7 +45,7 @@ function App() {
     <ThemeProvider>
       <AuthProvider>
         <Router>
-          <div className="min-h-screen bg-black text-white flex flex-col">
+          <div className="min-h-screen flex flex-col">
             <NavigationWrapper />
             
             <main className="flex-1 overflow-y-auto">
