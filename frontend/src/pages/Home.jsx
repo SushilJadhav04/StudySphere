@@ -58,7 +58,7 @@ const Home = () => {
 
             <Link to="/Summarization" className="w-full sm:w-auto">
               <Button className="w-full sm:w-auto flex justify-center items-center gap-2 text-center">
-              Let's Go <FontAwesomeIcon icon={faChevronRight} className="text-2xl ml-2 font-bold" />
+              Let's Go <FontAwesomeIcon icon={faChevronRight} className="text-2xl ml-2" />
 
               </Button>
             </Link>
