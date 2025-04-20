@@ -21,7 +21,7 @@ const Home = () => {
     <div className="flex flex-col min-h-screen text-black dark:text-white bg-white dark:bg-black overflow-x-hidden">
       {/* Main Content */}
       <div className="z-10 flex-1 flex flex-col items-center justify-center px-4 py-10">
-        <div className="relative z-10 text-center">
+        <div className="flex flex-col items-center justify-center text-center space-y-2relative ">
           {/* Main Heading */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center">
             <span className="inline-flex flex-wrap justify-center items-baseline gap-2">
