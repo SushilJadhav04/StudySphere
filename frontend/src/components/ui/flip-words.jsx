@@ -23,7 +23,8 @@ export const FlipWords = ({ words, interval = 2000 }) => {
         display: "inline-block",
         verticalAlign: "baseline", // Align with surrounding text
         minWidth: "10ch", // Prevent layout shift
-        height: "1em", // Match text line height
+        lineHeight:"1", 
+        height:"1em",
       }}
     >
       <span
