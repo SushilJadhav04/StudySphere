@@ -19,12 +19,7 @@ export const FlipWords = ({ words, interval = 2000 }) => {
   return (
     <span 
       className="relative inline-block text-blue-500 font-poppins"
-      style={{
-        display: "inline-flex",
-        alignItems: "center",
-        minWidth: "12ch", 
-        textAlign: "Centre",// Ensures enough space for words
-      }}
+      
     >
       <span
         className={`absolute inset-0 transition-all duration-1000 ease-in-out transform ${
