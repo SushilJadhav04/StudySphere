@@ -23,6 +23,7 @@ export const FlipWords = ({ words, interval = 2000 }) => {
         display: "inline-flex",
         alignItems: "center",
         minWidth: "12ch", // Ensures enough space for words
+        top: "-19px",
       }}
     >
       <span
@@ -32,7 +33,7 @@ export const FlipWords = ({ words, interval = 2000 }) => {
         style={{
           display: "inline-block",
           whiteSpace: "nowrap",
-          textAlign: "left",
+          textAlign: "centre-left",
         }}
       >
         {words[currentWordIndex]}
