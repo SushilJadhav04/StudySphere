@@ -32,7 +32,7 @@ export const FlipWords = ({ words, interval = 2000 }) => {
         style={{
           display: "inline-block",
           whiteSpace: "nowrap",
-          textAlign: "centre",
+          textAlign: "left",
         }}
       >
         {words[currentWordIndex]}
