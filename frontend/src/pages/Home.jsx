@@ -40,8 +40,9 @@ const Home = () => {
             </span>
           
 
-          <span>Starts Here! </span>
-          </h1>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2">
+            starts here!
+          </h2>
 
           {/* Buttons */}
           <div className="mt-12 flex flex-col sm:flex-row justify-center items-center gap-6 flex-wrap px-16 py-2">
