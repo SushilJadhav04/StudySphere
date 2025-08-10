@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export const FlipWords = ({ words, interval = 2000 }) => {
+export const FlipWords = ({ words, interval = 1500 }) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [isFlipping, setIsFlipping] = useState(false);
 
