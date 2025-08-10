@@ -36,6 +36,7 @@ const Sidebar = () => {
     { name: "Translation", icon: faLanguage, path: "/Translation" },
     { name: "StudySparks", icon: faStar, path: "/StudySparks" },
     { name: "ChatBot", icon: faRobot, path: "/Chat" },
+    { name: "Youtube Summarizer", icon: faRobot, path: "/YoutubeSummarizer" },
     { name: "Contact Us", icon: faMessage, path: "/ContactUs" },
 
   ];
