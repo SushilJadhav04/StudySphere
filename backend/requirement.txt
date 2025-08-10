@@ -28,3 +28,4 @@ gunicorn
 google.generativeai
 pydub
 speechrecognition==3.8.1
+markdown
