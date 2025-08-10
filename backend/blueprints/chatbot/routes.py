@@ -2,7 +2,7 @@ from flask import Blueprint, request, jsonify, render_template
 import google.generativeai as genai
 import pdfplumber  
 import os
-from .utils.text_processor import clean_text
+from .utils.text_processor import format_text  
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -37,10 +37,9 @@ def ask_gemini():
             
         response = model.generate_content(user_input)
 
-         # ✅ Strip unwanted characters and clean formatting
-        cleaned_text = clean_text(response.text)
+        formatted_html = format_text(response.text)
 
-        return jsonify({"response": cleaned_text})
+        return jsonify({"response": formatted_html})
 
     except Exception as e:
         print("Error:", str(e))  
