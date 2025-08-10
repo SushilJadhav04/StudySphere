@@ -115,18 +115,26 @@ const Chat = () => {
                 className={`flex ${message.sender === "user" ? "justify-end" : "justify-start"}`}
               >
                 <div
-                  className={`max-w-[70%] p-3 rounded-lg whitespace-pre-wrap shadow-md ${
-                    message.sender === "user"
-                      ? "bg-gray-200 text-black"
-                      : message.sender === "system"
-                      ? "bg-yellow-400 text-black"
-                      : theme === "dark"
-                      ? "bg-gray-700 text-gray-200"
-                      : "bg-gray-200 text-black"
-                  }`}
-                >
-                  {message.text}
-                </div>
+  className={`max-w-[70%] p-3 rounded-lg whitespace-pre-wrap shadow-md ${
+    message.sender === "user"
+      ? "bg-gray-200 text-black"
+      : message.sender === "system"
+      ? "bg-yellow-400 text-black"
+      : theme === "dark"
+      ? "bg-gray-700 text-gray-200"
+      : "bg-gray-200 text-black"
+  }`}
+>
+  {message.sender === "ai" ? (
+    <div
+      className="prose max-w-none"
+      dangerouslySetInnerHTML={{ __html: message.text }}
+    />
+  ) : (
+    message.text
+  )}
+</div>
+
               </div>
             ))}
           </div>
